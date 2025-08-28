@@ -2,59 +2,120 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnCount="3"
+    android:columnCount="2"
+    android:rowCount="3"
     android:padding="16dp"
-    android:rowCount="3">
+    android:alignmentMode="alignMargins"
+    android:rowOrderPreserved="false">
 
-    <Button
+    <!-- Delivery -->
+    <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="1" />
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <Button
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_delivery"
+            android:background="@drawable/circule_bg"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- Reservaciones -->
+    <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="2" />
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <Button
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_event"
+            android:background="@drawable/circule_bg"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reservaciones"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- Menú Digital -->
+    <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="3" />
+        android:layout_rowWeight="1"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <Button
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_restaurant_menu"
+            android:background="@drawable/circule_bg"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menú Digital"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- Sucursales -->
+    <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="4" />
-
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="0dp"
         android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:text="5" />
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:text="6" />
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_location_on"
+            android:background="@drawable/circule_bg"
+            android:padding="16dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sucursales"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- Botón Regresar -->
     <Button
         android:id="@+id/btnRegresar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_row="2"
         android:layout_column="0"
-        android:layout_columnSpan="3"
+        android:layout_columnSpan="2"
         android:layout_gravity="center"
-        android:text="Regresar" />
+        android:backgroundTint="@color/azul"
+        android:text="Regresar"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"/>
 </GridLayout>

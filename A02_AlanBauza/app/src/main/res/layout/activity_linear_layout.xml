@@ -6,24 +6,35 @@
     android:padding="16dp">
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Botón A" />
+        android:layout_gravity="center"
+        android:backgroundTint="@color/verde"
+        android:text="Verde" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Botón B" />
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/amarillo"
+        android:text="Amarillo" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Botón C" />
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/rojo"
+        android:text="Rojo" />
 
     <Button
         android:id="@+id/btnRegresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/azul"
         android:text="Regresar"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />

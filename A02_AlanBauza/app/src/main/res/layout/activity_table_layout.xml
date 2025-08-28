@@ -5,37 +5,50 @@
     android:stretchColumns="1"
     android:padding="16dp">
 
+    <!-- Campo Nombre -->
     <TableRow>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:text="Nombre:" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Introduce tu nombre" />
+            android:hint="Introduce tu nombre"
+            android:inputType="textPersonName" />
     </TableRow>
 
+    <!-- Campo Email -->
     <TableRow>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email:"
-            android:padding="8dp"/>
+            android:padding="8dp"
+            android:text="Email:" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Introduce tu email" />
+            android:hint="Introduce tu email"
+            android:inputType="textEmailAddress" />
     </TableRow>
 
-    <Button
-        android:id="@+id/btnRegresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Regresar"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+    <!-- Espaciador -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <!-- Botón Regresar centrado -->
+    <TableRow>
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Regresar"
+            android:backgroundTint="@color/azul"/>
+    </TableRow>
 
 </TableLayout>

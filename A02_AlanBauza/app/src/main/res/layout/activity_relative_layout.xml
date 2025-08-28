@@ -3,21 +3,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/usernameText"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Usuario"
+        android:layout_above="@id/inicioSesion"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shaq"/>
+
+    <TextView
+        android:id="@+id/inicioSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio de sesión"
         android:layout_above="@id/loginButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#585500D5"/>
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_centerInParent="true" />
+        android:text="Iniciar sesión"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#5500D5"/>
 
     <Button
         android:id="@+id/registerButton"
@@ -26,7 +36,8 @@
         android:text="Registrar"
         android:layout_below="@id/loginButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#5500D5"/>
 
     <Button
         android:id="@+id/btnRegresar"
@@ -34,6 +45,8 @@
         android:layout_height="wrap_content"
         android:text="Regresar"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/rojo"
+        android:layout_marginBottom="10dp"/>
 
 </RelativeLayout>
