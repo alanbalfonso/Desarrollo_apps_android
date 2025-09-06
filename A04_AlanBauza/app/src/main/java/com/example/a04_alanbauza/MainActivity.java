@@ -21,26 +21,26 @@ public class MainActivity extends AppCompatActivity {
         btnActividades = findViewById(R.id.btn_actividades);
 
         // Carga el fragmento inicial al iniciar la actividad
-        loadFragment(new FotoFragment());
+        loadFragment(new fragment_foto());
 
         btnFoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadFragment(new FotoFragment());
+                loadFragment(new fragment_foto());
             }
         });
 
         btnHorario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadFragment(new HorarioFragment());
+                loadFragment(new fragment_horario());
             }
         });
 
         btnActividades.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadFragment(new ActividadesFragment());
+                loadFragment(new fragment_actividades());
             }
         });
     }
