@@ -9,38 +9,46 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnFoto, btnHorario, btnActividades;
+    private Button btnAnimacion, btnComics, btnDrama, btnComedia;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnFoto = findViewById(R.id.btn_foto);
-        btnHorario = findViewById(R.id.btn_horario);
-        btnActividades = findViewById(R.id.btn_actividades);
+        btnAnimacion = findViewById(R.id.btn_animacion);
+        btnComics = findViewById(R.id.btn_comics);
+        btnDrama = findViewById(R.id.btn_drama);
+        btnComedia = findViewById(R.id.btn_comedia);
 
         // Carga el fragmento inicial al iniciar la actividad
-        loadFragment(new fragment_foto());
+        loadFragment(new fragment_animacion());
 
-        btnFoto.setOnClickListener(new View.OnClickListener() {
+        btnAnimacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadFragment(new fragment_foto());
+                loadFragment(new fragment_animacion());
             }
         });
 
-        btnHorario.setOnClickListener(new View.OnClickListener() {
+        btnComics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadFragment(new fragment_horario());
+                loadFragment(new fragment_comics());
             }
         });
 
-        btnActividades.setOnClickListener(new View.OnClickListener() {
+        btnDrama.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadFragment(new fragment_actividades());
+                loadFragment(new fragment_drama());
+            }
+        });
+
+        btnComedia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadFragment(new fragment_comedia());
             }
         });
     }

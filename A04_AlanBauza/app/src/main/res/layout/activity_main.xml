@@ -9,6 +9,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mis películas favoritas por género:"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="160dp"
@@ -16,24 +24,35 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_foto"
+                android:id="@+id/btn_animacion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Foto" />
+                android:layout_marginStart="1dp"
+                android:backgroundTint="@color/azul"
+                android:text="Animación" />
 
             <Button
-                android:id="@+id/btn_horario"
+                android:id="@+id/btn_comics"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="Horario" />
+                android:layout_marginStart="1dp"
+                android:backgroundTint="@color/azul"
+                android:text="Cómics" />
 
             <Button
-                android:id="@+id/btn_actividades"
+                android:id="@+id/btn_drama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="Actividades" />
+                android:layout_marginStart="1dp"
+                android:backgroundTint="@color/azul"
+                android:text="Drama" />
+            <Button
+                android:id="@+id/btn_comedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:backgroundTint="@color/azul"
+                android:text="Comedia" />
         </LinearLayout>
     </FrameLayout>
 
