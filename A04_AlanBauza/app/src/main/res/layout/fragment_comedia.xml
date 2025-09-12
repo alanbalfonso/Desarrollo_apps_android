@@ -1,15 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment_comedia">
+    android:gravity="center"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:textSize="20dp"
-        android:text="Películas de comedia" />
+        android:textSize="20sp"
+        android:text="Películas de comedia"
+        android:layout_marginTop="0dp"/>
 
-</FrameLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <!-- Película 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img_pelicula1"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/the_hangover" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="¿Qué pasó ayer?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="Año: 2009" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Director: Todd Phillips" />
+        </LinearLayout>
+
+        <!-- Película 2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img_pelicula2"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/supercool" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="Superbad"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="Año: 2007" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Director: Greg Mottola" />
+        </LinearLayout>
+
+        <!-- Película 3 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img_pelicula3"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/la_mascara" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="La máscara"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="Año: 1994" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Director: Chuck Russell" />
+        </LinearLayout>
+
+        <!-- Película 4 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img_pelicula4"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/scary_movie_2" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="Scary Movie 2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="Año: 2001" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Director: Keenen Ivory Wayans" />
+        </LinearLayout>
+    </GridLayout>
+
+</LinearLayout>

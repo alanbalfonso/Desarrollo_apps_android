@@ -6,20 +6,114 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Horario de Trabajo"
-        android:textSize="24sp" />
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="Películas de drama"
+        android:layout_marginTop="0dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <GridLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Lunes: 9:00 - 18:00" />
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:rowCount="2">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Martes: 9:00 - 18:00" />
+        <!-- Película 1 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="8dp"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/img_pelicula1"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/her"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"/>
+            <TextView android:text="Her" android:textStyle="bold" android:layout_height="20dp"
+                android:layout_width="150dp" />
+            <TextView android:text="Año: 2013" android:layout_height="20dp"
+                android:layout_width="150dp"/>
+            <TextView android:text="Director: Spike Jonze" android:layout_height="20dp"
+                android:layout_width="150dp"/>
+        </LinearLayout>
+
+        <!-- Película 2 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="8dp"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/img_pelicula2"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/the_lighthouse"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"/>
+            <TextView android:text="The Lighthouse" android:textStyle="bold" android:layout_height="20dp"
+                android:layout_width="150dp" />
+            <TextView android:text="Año: 2019" android:layout_height="20dp"
+                android:layout_width="150dp"/>
+            <TextView android:text="Director: Robert Eggers" android:layout_height="40dp"
+                android:layout_width="150dp"/>
+        </LinearLayout>
+
+        <!-- Película 3 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="8dp"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/img_pelicula3"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/the_holdovers"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"/>
+            <TextView android:text="The holdovers" android:textStyle="bold" android:layout_height="20dp"
+                android:layout_width="150dp" />
+            <TextView android:text="Año: 2023" android:layout_height="20dp"
+                android:layout_width="150dp"/>
+            <TextView android:text="Director: Alexander Payne" android:layout_height="50dp"
+                android:layout_width="150dp"/>
+        </LinearLayout>
+
+        <!-- Película 4 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="8dp"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/img_pelicula4"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/django"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"/>
+            <TextView android:text="Django: Unchained" android:textStyle="bold" android:layout_height="20dp"
+                android:layout_width="150dp" />
+            <TextView android:text="Año: 2012" android:layout_height="20dp"
+                android:layout_width="150dp"/>
+            <TextView android:text="Director: Quentin Tarantino" android:layout_height="40dp"
+                android:layout_width="150dp"/>
+        </LinearLayout>
+    </GridLayout>
 </LinearLayout>
